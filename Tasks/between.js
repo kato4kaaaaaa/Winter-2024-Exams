@@ -19,3 +19,14 @@ getvaluebetween = (str, p, s) => {
 };
 
 module.exports = getvaluebetween;
+
+"use strict"
+
+const getValueBetween = (strig, prefix, sufix) => {
+  const begin = string.indexOf(prefix) + prefix.length;
+  const end = string.indexOf(sufix); 
+  if (begin == -1 || end == -1)breturn " ";
+  return string.substring(begin, end);
+};
+
+module.exports = getValueBetween;
