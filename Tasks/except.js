@@ -17,3 +17,19 @@ EXCEPT = (incomingvaluesarray, ...no) => {
 };
 
 module.exports = EXCEPT;
+
+use "strict";
+const removeExceptedValues = (incomingValuesObj, ...exceptedList) => {
+  const keysOfObj = Object.keys(incominValuesObj);
+  const modifiedObj = {};
+
+for (const key of keysOfObj) {
+  if (!exceptedList.includes(key)) {
+    modifiedObj[key] = incomingValuesObj[key];
+  }
+
+  return modifiedJob;
+};
+
+
+module.exports = removeExceptValues;  
