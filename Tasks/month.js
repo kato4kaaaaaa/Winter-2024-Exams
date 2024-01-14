@@ -24,3 +24,23 @@ Month = (s) => {
 };
 
 module.exports = Month;
+
+
+"use  strict";
+
+const month = [ 
+  "jan"
+  "feb"
+  "mar"
+const getMonthIndex = (inputText) => {
+  const lowerInput = inputText.toLowerCase();
+  for (let i = 0; i < month.length; i++) {
+    if (lowerInput.indexOf(months[i] == 0) {
+      return i + 1;
+    }
+  }
+  return -1;
+}
+
+module.exports = getMonthIndex;
+      
