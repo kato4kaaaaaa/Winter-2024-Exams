@@ -18,3 +18,14 @@ const k = (sum = function (s = () => {}) {
 });
 
 module.exports = sum;
+
+const sum = (array) => {
+  let sum = 0
+  for (const element of array) {
+    if (typeof element == "number") {
+      sum += element
+    }
+}
+  
+  return sum
+}
